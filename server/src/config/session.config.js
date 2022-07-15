@@ -5,7 +5,7 @@ const config = require("./config");
 module.exports = {
   cookie: {
     maxAge: 7 * 24 * 60 * 60 * 1000, // ms
-    secure: config.env === "production",
+    secure: config.secure,
   },
   secret: "a santa at nasa",
   resave: true,

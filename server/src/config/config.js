@@ -8,8 +8,9 @@ dotenv.config({
 const vars = process.env;
 
 module.exports = {
-  env: vars.NODE_ENV,
   port: vars.PORT,
+  env: vars.NODE_ENV,
+  secure: Boolean(vars.SESSION_SECURE),
   corsOrigin: vars.CORS_ORIGIN,
-  selfHosted: vars.SELF_HOSTED_CLIENT,
+  selfHosted: Boolean(vars.SELF_HOSTED_CLIENT),
 };

@@ -30,8 +30,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build:prod": "dotenv -e .env.production.local react-scripts build &&  shx cp -r ./build ../server/build",
-    "build:dev": "dotenv -e .env.development.local react-scripts build && shx cp -r ./build ../server/build",
+    "build:prod": "dotenv -e .env.production.local react-scripts build && shx rm -rf ../server/build && shx cp -r ./build ../server/build",
+    "build:dev": "dotenv -e .env.development.local react-scripts build && shx rm -rf ../server/build && shx cp -r ./build ../server/build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
