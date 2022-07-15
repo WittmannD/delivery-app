@@ -30,7 +30,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build:prod": "npm run build && shx cp -r ./build/ ../server/client/",
+    "build:prod": "dotenv -e .env.production.local react-scripts build &&  shx cp -r ./build ../server/build",
+    "build:dev": "dotenv -e .env.development.local react-scripts build && shx cp -r ./build ../server/build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -68,6 +69,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
+    "dotenv-cli": "^6.0.0",
     "eslint": "^8.19.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
