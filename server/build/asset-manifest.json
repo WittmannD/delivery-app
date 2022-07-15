@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.cb468e8d.css",
-    "main.js": "./static/js/main.4bf90053.js",
-    "index.html": "./index.html",
-    "static/media/index.cjs": "./static/media/index.cd351d7c31d0d3fccf96.cjs",
-    "main.cb468e8d.css.map": "./static/css/main.cb468e8d.css.map",
-    "main.4bf90053.js.map": "./static/js/main.4bf90053.js.map"
+    "main.css": "https://ddeliveryy.herokuapp.com/static/css/main.cb468e8d.css",
+    "main.js": "https://ddeliveryy.herokuapp.com/static/js/main.f82c6ee7.js",
+    "index.html": "https://ddeliveryy.herokuapp.com/index.html",
+    "static/media/index.cjs": "https://ddeliveryy.herokuapp.com/static/media/index.cd351d7c31d0d3fccf96.cjs",
+    "main.cb468e8d.css.map": "https://ddeliveryy.herokuapp.com/static/css/main.cb468e8d.css.map",
+    "main.f82c6ee7.js.map": "https://ddeliveryy.herokuapp.com/static/js/main.f82c6ee7.js.map"
   },
   "entrypoints": [
     "static/css/main.cb468e8d.css",
-    "static/js/main.4bf90053.js"
+    "static/js/main.f82c6ee7.js"
   ]
 }

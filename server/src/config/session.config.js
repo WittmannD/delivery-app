@@ -7,7 +7,7 @@ module.exports = {
     maxAge: 7 * 24 * 60 * 60 * 1000, // ms
     secure: config.secure,
   },
-  secret: "a santa at nasa",
+  secret: config.sessionSecret,
   resave: true,
   saveUninitialized: true,
   store: new PrismaSessionStore(new PrismaClient(), {

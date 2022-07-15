@@ -11,6 +11,7 @@ module.exports = {
   port: vars.PORT,
   env: vars.NODE_ENV,
   secure: Boolean(vars.SESSION_SECURE),
+  sessionSecret: vars.SESSION_SECRET,
   corsOrigin: vars.CORS_ORIGIN,
   selfHosted: Boolean(vars.SELF_HOSTED_CLIENT),
 };
