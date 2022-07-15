@@ -5,9 +5,10 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
+    "build": "npx prisma generate",
     "run:dev": "cross-env NODE_ENV=development node src/index.js",
     "run:prod": "cross-env NODE_ENV=production node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "heroku-postbuild": "prisma introspect && prisma generate"
   },
   "prisma": {
     "seed": "node prisma/seed.js"
@@ -15,7 +16,6 @@
   "author": "Danyil Vitman <danjavitman@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "@prisma/client": "^4.0.0",
     "@quixo3/prisma-session-store": "^3.1.8",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
