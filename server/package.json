@@ -8,7 +8,7 @@
     "build": "npx prisma generate",
     "run:dev": "cross-env NODE_ENV=development node src/index.js",
     "run:prod": "cross-env NODE_ENV=production node src/index.js",
-    "heroku-postbuild": "prisma introspect && prisma generate"
+    "heroku-postbuild": "prisma generate"
   },
   "prisma": {
     "seed": "node prisma/seed.js"
