@@ -1,6 +1,6 @@
 const config = require("./config");
 
 module.exports = {
-  origin: config.clientBaseUrl,
+  origin: config.corsOrigin,
   credentials: true,
 };
