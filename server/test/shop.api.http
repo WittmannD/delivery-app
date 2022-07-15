@@ -1,0 +1,19 @@
+### Get request to /shop/:shopId to receive single shop.
+
+GET http://localhost:3000/api/shop/1
+
+### Get request to /shop to get all shop records with some filtering and sorting.
+
+GET http://localhost:3000/api/shop?orderBy[shopName]=desc&skip=3&take=3
+
+### Post request to /shop to create a shop record.
+
+POST http://localhost:3000/api/shop
+Content-Type: application/json
+
+{
+  "shopName": "Whispering Time Eatery",
+  "shopDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper non dolor eget mattis."
+}
+
+###

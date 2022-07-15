@@ -1,0 +1,14 @@
+### Get request to /shop/:shopId/products to retreive all product records of shop.
+
+GET http://localhost:3000/api/shop/3/products
+
+### Post request to /shop/:shopId/products to create a product record.
+
+POST http://localhost:3000/api/shop/1/products
+Content-Type: application/json
+
+{
+  "productName": "Mc Flurry +",
+  "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper non dolor eget mattis.",
+  "productUnitPrice": "42.50"
+}
