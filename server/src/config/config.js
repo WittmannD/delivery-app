@@ -11,4 +11,5 @@ module.exports = {
   env: vars.NODE_ENV,
   port: vars.PORT,
   corsOrigin: vars.CORS_ORIGIN,
+  selfHosted: vars.SELF_HOSTED_CLIENT,
 };

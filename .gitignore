@@ -4,4 +4,4 @@ node_modules
 .env.production
 .idea
 /server/prisma/prisma/
-/client/
+/client/build

@@ -25,10 +25,10 @@ app.options("*", cors());
 
 app.use("/api", router);
 
-if (config.env === "production") {
-  app.use(express.static("client"));
+if (config.env === "production" && config.selfHosted) {
+  app.use(express.static("build"));
   app.get("*", (req) => {
-    req.sendFile(path.resolve(__dirname, "client", "index.html"));
+    req.sendFile(path.resolve(__dirname, "build", "index.html"));
   });
 }
 
