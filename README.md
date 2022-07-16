@@ -24,12 +24,12 @@ Additional packages:
 
 ```
 git clone https://github.com/WittmannD/delivery-app.git
-cd dilivery-app
+cd delivery-app
 ```
 
 #### Run Express App
 
-You should install PostgreSQL and set the DATABASE_URL variable in .env (see .env.example).
+You should install PostgreSQL and set the PRIMSA_DATABASE_URL variable in .env (see .env.example).
 
 ```
 cd server
@@ -38,7 +38,7 @@ npm run build
 npm run run:dev
 ```
 
-### Run React App
+#### Run React App
 
 Set variables in the .env file, then:
 
