@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "https://ddeliveryy.herokuapp.com/static/css/main.f17895fa.css",
-    "main.js": "https://ddeliveryy.herokuapp.com/static/js/main.8cb1a955.js",
+    "main.css": "https://ddeliveryy.herokuapp.com/static/css/main.d6ebbeb6.css",
+    "main.js": "https://ddeliveryy.herokuapp.com/static/js/main.e645288f.js",
     "index.html": "https://ddeliveryy.herokuapp.com/index.html",
     "static/media/index.cjs": "https://ddeliveryy.herokuapp.com/static/media/index.cd351d7c31d0d3fccf96.cjs",
-    "main.f17895fa.css.map": "https://ddeliveryy.herokuapp.com/static/css/main.f17895fa.css.map",
-    "main.8cb1a955.js.map": "https://ddeliveryy.herokuapp.com/static/js/main.8cb1a955.js.map"
+    "main.d6ebbeb6.css.map": "https://ddeliveryy.herokuapp.com/static/css/main.d6ebbeb6.css.map",
+    "main.e645288f.js.map": "https://ddeliveryy.herokuapp.com/static/js/main.e645288f.js.map"
   },
   "entrypoints": [
-    "static/css/main.f17895fa.css",
-    "static/js/main.8cb1a955.js"
+    "static/css/main.d6ebbeb6.css",
+    "static/js/main.e645288f.js"
   ]
 }

@@ -79,7 +79,7 @@ const OrderForm = () => {
         />
       </div>
       {getDistanceLabel(distance)}
-      <form className="mt-4 px-4">
+      <form className="mt-4 sm:px-4">
         <div className="mb-4">
           <label
             htmlFor="address"

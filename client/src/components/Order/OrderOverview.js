@@ -53,10 +53,10 @@ const OrderOverview = () => {
   }, []);
 
   return (
-    <div className="absolute inset-0">
+    <div className="pb-20 md:absolute md:inset-0 md:pb-0">
       {!Number(cart.totalAmount) ? (
         <div className="mx-auto flex h-full max-w-screen-md items-center justify-center">
-          <div className="pb-8 text-center text-2xl font-semibold">
+          <div className="py-8 text-center text-2xl font-semibold">
             <p>Your shopping cart is empty now.</p>
             <p>Go to the store page and select a product</p>
             <Link
@@ -82,28 +82,28 @@ const OrderOverview = () => {
           </div>
         </div>
       ) : (
-        <div className="mx-auto flex h-full max-w-screen-xl space-x-4 p-4">
+        <div className="mx-auto flex max-w-screen-xl flex-col-reverse p-4 md:h-full md:flex-row md:space-x-4">
           <div className="flex-1">
             <FormProvider {...orderFormStates}>
               <OrderForm />
             </FormProvider>
           </div>
           <div className="flex flex-1 flex-col">
-            <div className="space-y-4 overflow-y-auto rounded-lg border p-4">
+            <div className="space-y-4 overflow-y-auto rounded-lg pb-4">
               {cart.items.map((product) => (
                 <OrderItem data={product} key={product.id} />
               ))}
             </div>
-            <div className="mt-4 mb-9 flex flex-row items-center justify-between p-4">
-              <h3 className="text-xl">
-                Total price:{" "}
+            <div className="fixed inset-x-0 bottom-0 mt-4 flex flex-row items-center justify-between border-t border-gray-300 bg-white p-4 dark:bg-gray-900 md:static md:mb-9 md:bg-transparent">
+              <h3 className="text-center text-lg sm:text-xl">
+                <span className="hidden sm:inline">Total price: </span>
                 <span className="mx-2 font-semibold">
                   {price(cart.totalAmount)}
                 </span>
               </h3>
               <button
                 onClick={orderFormStates.handleSubmit(submitOrder)}
-                className="mr-2 inline-flex items-center rounded-lg bg-primary-700 px-6 py-3 text-center text-base font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                className="mr-2 inline-flex shrink-0 items-center rounded-lg bg-primary-700 px-6 py-3 text-center text-base font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
               >
                 <svg
                   className="mr-2 -ml-1 h-5 w-5"

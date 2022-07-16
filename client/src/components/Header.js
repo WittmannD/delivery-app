@@ -4,7 +4,6 @@ import { getShoppingCart, setShoppingCart } from "../redux/slices/cart.slice";
 import { price } from "../utils/helpers";
 import { http } from "../utils/api";
 import { useEffect } from "react";
-import Toaster from "react-hot-toast";
 
 const Header = () => {
   const location = useLocation();
@@ -26,7 +25,7 @@ const Header = () => {
   return (
     <header>
       <nav className="border-gray-200 bg-white px-4 py-2.5 dark:bg-gray-800 lg:px-6">
-        <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between px-4">
+        <div className="mx-auto flex max-w-screen-xl flex-col items-center justify-between space-y-2 px-4 sm:flex-row sm:space-y-0">
           <Link to="/" className="flex items-center">
             <span className="self-center whitespace-nowrap text-2xl font-semibold hover:text-gray-700 dark:text-white dark:hover:text-gray-200">
               Your Delivery
@@ -36,7 +35,7 @@ const Header = () => {
             {location.pathname === "/order" ? (
               <Link
                 to={`/shop/${cart.shopId ?? ""}`}
-                className="inline-flex items-center rounded-lg bg-primary-700 px-5 py-2.5 text-center text-base font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                className="inline-flex shrink-0 items-center rounded-lg bg-primary-700 px-5 py-2.5 text-center text-base font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
               >
                 <svg
                   className="mr-2 -ml-1 h-5 w-5"
@@ -56,15 +55,15 @@ const Header = () => {
               </Link>
             ) : (
               <>
-                <h3 className="text-lg mr-8">
-                  Total price:{" "}
+                <h3 className="mr-4 text-center text-base sm:mr-8 md:text-lg">
+                  <span className="hidden md:inline">Total price: </span>
                   <span className="mx-2 font-semibold">
                     {price(cart.totalAmount)}
                   </span>
                 </h3>
                 <Link
                   to="/order"
-                  className="inline-flex items-center rounded-lg bg-primary-700 px-5 py-2.5 text-center text-base font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                  className="inline-flex shrink-0 items-center rounded-lg bg-primary-700 px-5 py-2.5 text-center text-base font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                 >
                   <svg
                     className="mr-2 -ml-1 h-5 w-5"

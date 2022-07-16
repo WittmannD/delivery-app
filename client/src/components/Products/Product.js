@@ -10,11 +10,15 @@ const Product = ({ data }) => {
 
   const addToCart = async (productId) => {
     toast
-      .promise(http.post(`/cart/${productId}/add`), {
-        loading: "loading...",
-        success: "added to your cart",
-        error: "something went wrong",
-      })
+      .promise(
+        http.post(`/cart/${productId}/add`),
+        {
+          loading: "loading...",
+          success: "added to your cart",
+          error: "something went wrong",
+        },
+        { id: "added to your cart" }
+      )
       .then((response) => dispatch(setShoppingCart(response.data)))
       .catch((err) => {});
   };

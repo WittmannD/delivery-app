@@ -30,7 +30,7 @@ function App() {
     <div className="flex min-h-screen flex-col flex-nowrap bg-gray-50 dark:bg-gray-900">
       <Toaster position="top-center" gutter={16} />
       <Header />
-      <div className="relative flex-1 px-8 lg:px-10">
+      <div className="flex-1 px-2 md:relative lg:px-6">
         <Routes>
           <Route exact index element={<Navigate to="/shop" replace />} />
           <Route path="shop" element={<HomeRoute />}>

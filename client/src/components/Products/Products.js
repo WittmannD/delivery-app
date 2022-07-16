@@ -24,7 +24,7 @@ const Products = () => {
   }, [shopId]);
 
   return (
-    <div className="grid flex-1 shrink self-start grid-cols-1 gap-4 p-4 lg:grid-cols-2 xl:grid-cols-3">
+    <div className="grid flex-1 shrink grid-cols-1 gap-4 p-4 sm:grid-cols-2 md:grid-cols-1 md:self-start lg:grid-cols-2 xl:grid-cols-3">
       {products.map((product) => (
         <Product key={product.id} data={product} />
       ))}

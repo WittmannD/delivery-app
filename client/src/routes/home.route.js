@@ -4,7 +4,7 @@ import Shops from "../components/Shops";
 
 const HomeRoute = () => {
   return (
-    <div className="mx-auto flex max-w-screen-xl flex-row">
+    <div className="mx-auto flex max-w-screen-xl flex-col md:flex-row">
       <Shops />
       <Outlet />
     </div>
