@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "https://ddeliveryy.herokuapp.com/static/css/main.d6ebbeb6.css",
-    "main.js": "https://ddeliveryy.herokuapp.com/static/js/main.e645288f.js",
-    "index.html": "https://ddeliveryy.herokuapp.com/index.html",
-    "static/media/index.cjs": "https://ddeliveryy.herokuapp.com/static/media/index.cd351d7c31d0d3fccf96.cjs",
-    "main.d6ebbeb6.css.map": "https://ddeliveryy.herokuapp.com/static/css/main.d6ebbeb6.css.map",
-    "main.e645288f.js.map": "https://ddeliveryy.herokuapp.com/static/js/main.e645288f.js.map"
+    "main.css": "https://deliveryapp-ejty.onrender.com/static/css/main.d6ebbeb6.css",
+    "main.js": "https://deliveryapp-ejty.onrender.com/static/js/main.a3c1d476.js",
+    "index.html": "https://deliveryapp-ejty.onrender.com/index.html",
+    "static/media/index.cjs": "https://deliveryapp-ejty.onrender.com/static/media/index.cd351d7c31d0d3fccf96.cjs",
+    "main.d6ebbeb6.css.map": "https://deliveryapp-ejty.onrender.com/static/css/main.d6ebbeb6.css.map",
+    "main.a3c1d476.js.map": "https://deliveryapp-ejty.onrender.com/static/js/main.a3c1d476.js.map"
   },
   "entrypoints": [
     "static/css/main.d6ebbeb6.css",
-    "static/js/main.e645288f.js"
+    "static/js/main.a3c1d476.js"
   ]
 }
