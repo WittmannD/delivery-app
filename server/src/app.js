@@ -31,7 +31,7 @@ if (config.env === "production" && config.selfHosted) {
   app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "../build", "index.html"));
   });
-}
+}-
 
 app.use((req, res, next) => {
   next(new ApiError(httpStatus.NOT_FOUND, "Not found"));
