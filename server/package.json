@@ -6,8 +6,9 @@
   "scripts": {
     "start": "node src/index.js",
     "build": "npx prisma generate && npx prisma migrate dev && npx prisma db seed",
-    "run:dev": "cross-env NODE_ENV=development nodemon src/index.js",
-    "run:prod": "cross-env NODE_ENV=production node src/index.js",
+    "build:prod": "npx prisma generate && npx prisma migrate deploy && npx prisma db seed",
+    "start:dev": "cross-env NODE_ENV=development nodemon src/index.js",
+    "start:prod": "node src/index.js",
     "heroku-postbuild": "prisma generate && prisma db push"
   },
   "prisma": {
