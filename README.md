@@ -3,7 +3,7 @@
 A simple application for food delivery. The user can select a store, add products to the shopping cart and send the order to the server.
 App data is stored in a database. The cart is saved in session on the server using the express-session library.
 
-Preview: https://deliveryapp-ejty.onrender.com/shop (Unfortunately, free database plan has expired, so preview is not available for now :( I'll get to this later)
+Preview: https://deliveryapp-ejty.onrender.com/shop 
 
 ### Stack
 - **Node.js**
